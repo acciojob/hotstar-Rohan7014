@@ -17,6 +17,6 @@ public class ProductionHouseService {
         ProductionHouse productionHouse=new ProductionHouse();
         productionHouse.setName(productionHouseEntryDto.getName());
         productionHouse.setRatings(0);
-        return  productionHouse.getId();
+        return  productionHouse.getWebSeriesList().size();
     }
 }
