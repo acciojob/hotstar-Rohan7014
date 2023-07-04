@@ -86,7 +86,7 @@ public class SubscriptionService {
         List<Subscription> subscriptionList=subscriptionRepository.findAll();
         Integer totalRevenue=0;
 
-        for(Subscription subscription=subscriptionList){
+        for(Subscription subscription:subscriptionList){
             totalRevenue+=subscription.getTotalAmountPaid();
         }
 
